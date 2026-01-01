@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Ended</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        .message {
+            font-size: 56px;
+            font-weight: bold;
+            text-align: center;
+            color: #ff3b3b;
+            animation: blinkZoom 1.2s infinite;
+        }
+
+        @keyframes blinkZoom {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.2;
+                transform: scale(1.08);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        YOUR SUBSCRIPTION HAS ENDED<br>
+        CONTACT YOUR ADMIN
+    </div>
+</body>
+</html>
