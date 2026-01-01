@@ -238,9 +238,23 @@
     }
 </style>
 </head>
+<script>
+/* ===== VERSION CONTROL (WebView Safe) ===== */
+const CURRENT_VERSION = "1.0.0";
+
+fetch("version.json?t=" + Date.now())
+  .then(res => res.json())
+  .then(data => {
+    if (data.version !== CURRENT_VERSION) {
+      console.log("New version detected:", data.version);
+      location.reload(true);
+    }
+  })
+  .catch(err => console.log("Version check failed", err));
+</script>
 <body>
 <div class="container">
-    <h1>HIMP HOUSE OF LANISTER </h1>
+    <h1>namaskar </h1>
     
     <div class="file-section">
         <div class="file-input-container">
